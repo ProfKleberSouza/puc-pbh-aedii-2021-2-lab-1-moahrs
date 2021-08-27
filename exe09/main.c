@@ -9,10 +9,7 @@ int main() {
   scanf("%d %d", &a, &b);
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  placar_possiveis(a, b);
 
   return(0);
 }

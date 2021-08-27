@@ -9,10 +9,10 @@ int main() {
   scanf("%d %d", &a, &b);
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  s = potencia(a, b);
 
   // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  printf("%d\n", s);
 
   return(0);
 }

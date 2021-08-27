@@ -9,10 +9,10 @@ int main() {
   scanf("%d %d", &a, &b);
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  s = mdc(a, b);
 
   // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  printf("MDC = %d\n", s);
 
   return(0);
 }

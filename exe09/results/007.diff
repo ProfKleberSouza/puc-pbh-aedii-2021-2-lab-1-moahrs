@@ -1,0 +1,8 @@
+1c1,5
+< SOMA = 13
+---
+> AAAAB
+> AAABA
+> AABAA
+> ABAAA
+> BAAAA

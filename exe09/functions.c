@@ -1,7 +1,32 @@
 
+#include <stdio.h>
+#include <string.h>
 #include "functions.h"
 
-int somar(int n1, int n2){
+void placar_possiveis_rec(char placar[], int m, int n, int pos)
+{
+  if (m == 0 &&  n == 0)
+  {
+    placar[pos] = '\0';
+    printf("%s\n", placar);
+  }
 
-    return n1+n2;
+  if (m > 0)
+  {
+    placar[pos] = 'A';
+    placar_possiveis_rec(placar, m - 1, n, pos + 1);
+  }
+
+  if (n > 0)
+  {
+    placar[pos] = 'B';
+    placar_possiveis_rec(placar, m, n - 1, pos + 1);
+  }
+}
+
+void placar_possiveis(int m, int n)
+{
+  char placar[100];
+
+  placar_possiveis_rec(placar, m, n, 0);
 }
